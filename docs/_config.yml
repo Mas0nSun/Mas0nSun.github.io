@@ -27,7 +27,7 @@ url: "https://mas0nsun.github.io" # the base hostname & protocol for your site, 
 github_username: Mas0nSun
 
 # Build settings
-theme: minima
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
