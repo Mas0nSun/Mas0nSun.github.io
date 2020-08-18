@@ -25,7 +25,7 @@ email: 421680227@qq.com
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 baseurl: "/docs" # the subpath of your site, e.g. /blog
-url: "https://mas0nsun.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mas0nsun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Mas0nSun
 
 # Build settings
