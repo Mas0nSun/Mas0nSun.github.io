@@ -15,17 +15,17 @@ categories: Swift
 
 ```swift
 struct ContentView: View {
-		// 1
+    // 1
     @State var isSearching: Bool = false
 
     var body: some View {
-    		// 2
+        // 2
         if isSearching {
             Text("Hello, world!")
                 .padding()
         } else {
             Button("Search") {
-            		// 3
+                // 3
                 isSearching = true
             }
         }
@@ -51,7 +51,7 @@ struct ContentView: View {
 
 ```swift
 class Person {
-		lazy var name: String = "Mas0n"
+    lazy var name: String = "Mas0n"
 }
 ```
 
