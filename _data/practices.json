@@ -1,0 +1,28 @@
+[
+    {
+        "category": "word",
+        "drawings": [
+            {
+                "name": "lowercase",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/lowercase.drawing"
+            },
+            {
+                "name": "uppercase",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/uppercase.drawing"
+            }
+        ]
+    },
+    {
+        "category": "= =",
+        "drawings": [
+            {
+                "name": "lowercase",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/lowercase.drawing"
+            },
+            {
+                "name": "uppercase",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/uppercase.drawing"
+            }
+        ]
+    }
+]
