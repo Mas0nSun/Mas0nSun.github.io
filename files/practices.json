@@ -9,6 +9,14 @@
             {
                 "name": "uppercase",
                 "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/uppercase.drawing"
+            },
+            {
+                "name": "test1",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/test1.drawing"
+            },
+            {
+                "name": "test2",
+                "url": "https://videos-1258719553.cos.ap-beijing.myqcloud.com/drawing/test2.drawing"
             }
         ]
     },
