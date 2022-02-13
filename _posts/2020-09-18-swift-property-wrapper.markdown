@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: posts
 title:  "Swift Property Wrapper"
 date:   2020-09-18 11:55:00 +0800
-categories: Swift
+taxonomy: Swift
 ---
 
 ## Property Wrapper
