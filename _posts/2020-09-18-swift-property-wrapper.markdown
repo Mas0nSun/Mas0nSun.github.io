@@ -1,11 +1,11 @@
 ---
-layout: posts
+layout: post
 title:  "Swift Property Wrapper"
 date:   2020-09-18 11:55:00 +0800
-taxonomy: Swift
+categories: Swift
 ---
 
-## Property Wrapper
+### Property Wrapper
 
 刚接触`SwiftUI`时, 看到这些东西
 
