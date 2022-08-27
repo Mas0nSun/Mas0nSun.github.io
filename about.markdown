@@ -14,4 +14,3 @@ permalink: /about/
 You can find the source code for blogs  at GitHub:
 [Source Code](https://github.com/Mas0nSun?tab=repositories)
 
-[Mas0n](https://github.com/Mas0nSun)

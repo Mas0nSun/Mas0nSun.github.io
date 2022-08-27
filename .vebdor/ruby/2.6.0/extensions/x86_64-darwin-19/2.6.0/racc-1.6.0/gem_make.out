@@ -1,0 +1,18 @@
+current directory: /Users/mas0n/Github/Mas0n/.vebdor/ruby/2.6.0/gems/racc-1.6.0/ext/racc/cparse
+/Users/mas0n/.rvm/rubies/ruby-2.6.0/bin/ruby -I /Users/mas0n/.rvm/rubies/ruby-2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20220828-21632-prpnzg.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/mas0n/Github/Mas0n/.vebdor/ruby/2.6.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/mas0n/Github/Mas0n/.vebdor/ruby/2.6.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/mas0n/Github/Mas0n/.vebdor/ruby/2.6.0/gems/racc-1.6.0/ext/racc/cparse
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20220828-21632-fwd80e/racc
