@@ -1,7 +1,9 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
+import { SOCIALS } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
+import Socials from "./Socials.astro";
 
 import logoPNG from "/assets/logo.png";
 import logoSVG from "/assets/logo.svg";
@@ -11,23 +13,31 @@ export interface Props {
 }
 
 const { activeNav } = Astro.props;
+const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <header>
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
     <div class="top-nav-wrap">
-      <a href="/" class="logo">
+      <a class="logo-container" target="_blank" href="/rss.xml" aria-label="rss feed" title="RSS Feed">
+        <span class="logo">{ SITE.title }</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon">
+          <path
+            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z">
+          </path>
+          <path
+            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z">
+          </path>
+          <circle cx="6" cy="18" r="2"></circle>
+        </svg>
+
         {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={LOGO_IMAGE.svg ? logoSVG : logoPNG}
-              alt="AstroPaper Logo"
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.title
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <Socials />
+            </div>
           )
         }
       </a>
@@ -113,10 +123,19 @@ const { activeNav } = Astro.props;
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+    @apply relative flex w-full items-center justify-between p-4 sm:items-center sm:py-8;
+  }
+  .logo-container { 
+    @apply flex flex-row items-center;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    @apply text-xl font-semibold sm:static sm:text-2xl;
+  }
+  .rss-icon {
+    @apply ml-1 scale-110 fill-skin-accent sm:scale-125;
+  }
+  .social-wrapper {
+    @apply ml-2 flex w-full flex-row items-center;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
