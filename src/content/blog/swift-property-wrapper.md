@@ -1,8 +1,15 @@
 ---
-layout: post
-title:  "Swift Property Wrapper"
-date:   2020-09-18 11:55:00 +0800
-categories: Swift
+author: Mason Sun
+pubDatetime: 2020-09-18T11:55:00Z
+title: Swift Property Wrapper
+postSlug: adding-new-posts-in-astropaper-theme
+featured: true
+draft: false
+tags:
+  - Swift
+ogImage: ""
+description:
+  对 Swift Property Wrapper 的简单理解
 ---
 
 ### Property Wrapper
