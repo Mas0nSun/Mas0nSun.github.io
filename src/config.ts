@@ -5,7 +5,7 @@ export const SITE = {
   author: "Mason Sun",
   desc: "A blog about Swfit and SwiftUI",
   title: "MasonSun",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "",
   lightAndDarkMode: true,
   postPerPage: 3,
 };
