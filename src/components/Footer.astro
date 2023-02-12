@@ -15,6 +15,7 @@ const { noMarginTop = false } = Astro.props;
   <Hr noPadding />
   <div class="footer-wrapper">
     <div class="social-wrapper"> 
+      <Socials/>
       <a target="_blank" href="/rss.xml" aria-label="rss feed" title="RSS Feed">
         <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon">
           <path
@@ -26,7 +27,6 @@ const { noMarginTop = false } = Astro.props;
           <circle cx="6" cy="18" r="2"></circle>
         </svg>
       </a>
-      <Socials/>
     </div>
     <div class="copyright-wrapper">
       <span>Copyright &#169; {currentYear}</span>
@@ -47,7 +47,7 @@ const { noMarginTop = false } = Astro.props;
     @apply flex flex-row items-center;
   }
   .rss-icon {
-    @apply mr-1 scale-110 fill-skin-accent sm:scale-125;
+    @apply ml-3 scale-110 fill-skin-accent sm:scale-125;
   }
   .link-button {
     @apply my-1 p-2 hover:rotate-6;
