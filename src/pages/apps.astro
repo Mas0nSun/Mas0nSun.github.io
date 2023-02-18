@@ -1,0 +1,54 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+---
+
+<Layout title={`Apps | ${SITE.title}`}>
+  <Header activeNav="apps"/>
+
+  <Main pageTitle="Apps" pageDesc="All the apps I've built."> 
+    <div class="grid grid-cols-6">
+      <a href="https://apps.apple.com/cn/app/life-progress-bar-for-widgets/id1624338802">
+        <div class="app-container">
+          <img class="app-icon" src="/assets/life-progress-bar-icon.png" width="60" height="60">
+          <p class="app-icon-label">Life Progress Bar</p>
+        </div>
+      </a>
+      <a href="https://apps.apple.com/cn/app/slime-assets-maker/id1596648022">
+        <div class="app-container">
+          <img class="app-icon" src="/assets/slime-icon.png" width="60" height="60">
+          <p class="app-icon-label">Slime</p>
+        </div>
+      </a>
+      <a href="https://apps.apple.com/cn/app/muscle-free-journey-of-power/id1501300227">
+        <div class="app-container">
+          <img class="app-icon" src="/assets/muscle-free-icon.png" width="60" height="60">
+          <p class="app-icon-label">Muscle Free</p>
+        </div>
+      </a>
+      <a href="https://apps.apple.com/cn/app/simple-bill/id1490290251">
+        <div class="app-container">
+          <img class="app-icon" src="/assets/simple-bill-icon.png" width="60" height="60">
+          <p class="app-icon-label">Simple Bill</p>
+        </div>
+      </a>
+    </div>
+  </Main>
+
+  <Footer />
+</Layout>
+
+<style>
+.app-container { 
+  @apply w-full items-center justify-center;
+}
+.app-icon { 
+  @apply rounded-md mx-auto self-center;
+}
+.app-icon-label { 
+  @apply text-sm pt-2 text-center;
+}
+</style>

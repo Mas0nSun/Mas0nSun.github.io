@@ -1,16 +1,13 @@
 ---
 import { SITE } from "@config";
-import { SOCIALS } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
-import Socials from "./Socials.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "apps" | "about" | "search";
 }
 
 const { activeNav } = Astro.props;
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <header>
@@ -40,6 +37,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           <li>
             <a href="/tags" class={activeNav === "tags" ? "active" : ""}>
               Tags
+            </a>
+          </li>
+          <li>
+            <a href="/apps" class={activeNav === "apps" ? "active" : ""}>
+              Apps
             </a>
           </li>
           <li>
